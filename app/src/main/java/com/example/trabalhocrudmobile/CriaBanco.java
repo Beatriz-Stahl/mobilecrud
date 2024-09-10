@@ -7,12 +7,40 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class CriaBanco extends SQLiteOpenHelper {
 
     private static final String NOME_BANCO = "banco.db";
-    private static final String TABELA = "contatos";
+     public static final String TABELA = "contatos";
     private static final String ID = "_id";
     private static final String NOME = "nome";
     private static final String EMAIL = "email";
     private static final String SENHA = "senha";
     private static final int VERSAO = 1;
+
+
+    public static String getNomeBanco() {
+        return NOME_BANCO;
+    }
+
+    public static String getTabela() {
+        return TABELA;
+    }
+
+    public static String getId() {
+        return ID;
+    }
+
+    public static String getNome() {
+        return NOME;
+    }
+
+    public static String getEmail() {
+        return EMAIL;
+    }
+
+    public static String getSenha() {
+        return SENHA;
+    }
+
+
+
 
 
     public CriaBanco(Context context){
